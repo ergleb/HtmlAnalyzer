@@ -69,7 +69,8 @@ public class Main {
 
         int maxMatchIndex = findMaxPos(matches);
 
-        LOGGER.info("elem with max matches: {}", diffCaseElems.get(maxMatchIndex));
+        LOGGER.debug("elem with max matches: {}", diffCaseElems.get(maxMatchIndex));
+        System.out.println("elem with max matches: " + diffCaseElems.get(maxMatchIndex));
 
         List<Element> parents = new ArrayList<> (diffCaseElems
                 .get(maxMatchIndex)
